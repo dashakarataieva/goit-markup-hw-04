@@ -14,7 +14,8 @@ font-family: 'Roboto', sans-serif;*/
   --border: #afb1b8;
   --border-portfolio: #eeeeee;
   --header: #ececec;
-  --hero-overlay: rgba(47, 48, 58, 0.4)
+  --hero-overlay: rgba(47, 48, 58, 0.4);
+  --footer-soc-bg: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -114,6 +115,7 @@ body {
 .header-contacts-item:hover,
 .header-contacts-item:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .header-contacts-item {
   font-weight: 500;
@@ -127,6 +129,16 @@ body {
 }
 .nav-mail {
   margin-right: 30px;
+}
+.icon-header {
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: currentColor;
+
+}
+.nav-mail:focus,
+.nav-mail:hover {
+  color: var(--accent-color);
 }
 
 /*hero*/
@@ -145,6 +157,8 @@ body {
       var(--hero-overlay)
     ),
     url("../images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .main-title {
   font-weight: 900;
@@ -292,6 +306,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 30px * 3) / 4);
   padding-bottom: 24px;
+
 }
 .crew-name {
   font-weight: 500;
@@ -320,10 +335,32 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 28px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 .crew-img {
   display: block;
 }
+.crew-link {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.icon-crew-soc {
+  fill: var(--border)
+}
+.crew-link:hover,
+.crew-link:focus{
+  background-color: var(--accent-color);
+}
+.crew-link:hover .icon-crew-soc,
+.crew-link:focus .icon-crew-soc {
+  fill: var(--white-color)
+}
+
 
 /* clients */
 .clients-list {
@@ -348,10 +385,17 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.icon-clients {
+  fill: var(--border);
+}
 .clients-item:hover,
 .clients-item:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+.clients-item:hover .icon-clients,
+.clients-item:focus .icon-clients {
+fill: var(--accent-color);
 }
 
 /*footer*/
@@ -397,6 +441,31 @@ body {
   display: inline-block;
   margin-bottom: 20px;
 }
+.icon-footer-soc {
+  fill: var(--border);
+}
+.footer-soc-link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+ background-color: var(--footer-soc-bg);
+ border-radius: 50%;
+}
+.web-list .web-item + .web-item {
+  margin-left: 10px;
+}
+.icon-footer-soc {
+  fill: var(--white-color);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+
+
 .textarea-subscr {
   font-weight: 400;
   font-size: 16px;
@@ -435,6 +504,8 @@ body {
 .footer-content {
   display: flex;
   justify-content: space-around;
+  padding-right: 600px;
+ 
 }
 .web-list {
   display: flex;
