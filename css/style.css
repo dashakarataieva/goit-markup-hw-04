@@ -567,6 +567,7 @@ fill: var(--accent-color);
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--dark-color);
+  
 }
 .portfolio-examples-text {
   font-weight: 400;
@@ -574,6 +575,10 @@ fill: var(--accent-color);
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  
+}
+.port-link {
+text-decoration: none;
 }
 .portfolio-examples {
   margin-top: 50px;
@@ -595,6 +600,7 @@ fill: var(--accent-color);
   padding-left: 24px;
   justify-content: flex-start;
   width: 370px;
+  
 }
 /* .portfolio-examples-item:not(:nth-child(3n + 1)) {
   margin-left: 30px;
