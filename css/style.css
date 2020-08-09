@@ -582,9 +582,9 @@ fill: var(--accent-color);
 .port-ex-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 .portfolio-examples-item {
-  width: calc((100% - 30px * 2) / 3);
   height: 404px;
   border: 1px solid var(--border-portfolio);
   box-sizing: border-box;
@@ -594,15 +594,17 @@ fill: var(--accent-color);
   padding-bottom: 20px;
   padding-left: 24px;
   justify-content: flex-start;
+  width: 370px;
 }
-.portfolio-examples-item:not(:nth-child(3n + 1)) {
+/* .portfolio-examples-item:not(:nth-child(3n + 1)) {
   margin-left: 30px;
-}
+} */
 .portfolio-examples-item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 .portfolio-img {
   display: block;
+  margin: 0;
 }
 .portfolio-examples-item:hover,
 .portfolio-examples-item:focus {
